@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Visly",
+  "version": "1.0",
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "description": "Select text and get a floating button to log it.",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

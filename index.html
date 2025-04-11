@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extension UI</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        width: 320px;
+        padding: 20px;
+        background: #5508e9;
+        color: white;
+        text-align: center;
+        border-radius: 10px;
+        position: relative;
+      }
+
+      h2 {
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 12px;
+        border: none;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        outline: none;
+        font-size: 14px;
+      }
+
+      input::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 8px;
+        border: none;
+        border-radius: 8px;
+        background: white;
+        color: #5508e9;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        box-shadow: 0 3px 8px rgba(255, 255, 255, 0.2);
+      }
+
+      button:hover {
+        background: rgba(255, 255, 255, 0.9);
+      }
+
+      /* Toast Notification */
+      .toast {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: white;
+        color: #5508e9;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease-in-out;
+      }
+
+      .toast.show {
+        opacity: 1;
+        visibility: visible;
+        bottom: 40px;
+      }
+
+      .toast.error {
+        background: #ff4d4d;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Visly</h2>
+    <input type="text" id="input1" placeholder="Enter email" />
+    <input type="text" id="input2" placeholder="Enter resume link" />
+    <button id="saveBtn">Save Data</button>
+    <button id="loadBtn">Load Data</button>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- External Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

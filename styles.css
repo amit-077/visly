@@ -1,0 +1,24 @@
+.text-select-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    outline: none;
+}
+
+.text-select-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.text-select-btn:active {
+    background-color: #004494;
+    transform: scale(0.98);
+}
