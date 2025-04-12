@@ -17,6 +17,16 @@ That’s it. No signups, no logins, no complicated setup.
 
 ---
 
+### 🛠 How to Install
+
+1. Download the extension(zip file) and extract it.
+2. Open chrome, go to extensions tab. Turn on the "developer mode" (Top right side)
+3. Click on the "Load unpacked" option. (Left top side)
+4. Select the folder (extracted folder)
+5. That's it! You're ready to use it now!!
+
+---
+
 ### 🛠 How to Use
 
 1. Install the Chrome Extension  
