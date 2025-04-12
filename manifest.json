@@ -6,7 +6,7 @@
     "48": "icon48.png",
     "128": "icon128.png"
   },
-  "description": "Select text and get a floating button to log it.",
+  "description": "Visly is a Chrome Extension that tells you who viewed your resume and when. Generate a unique, trackable link with one click — and get notified the moment someone opens it. Perfect for job seekers who want to follow up smarter and stop guessing.",
   "action": {
     "default_popup": "index.html"
   },
